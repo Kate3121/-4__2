@@ -23,7 +23,6 @@ namespace лр4__2
             static void Main(string[] args)
             {
 
-                /////
                 Console.Write("Введiть виробника жорсткого диска: "); string manufacturer = Console.ReadLine();
 
                 Console.Write("Введiть назву моделi: "); string model = Console.ReadLine();
@@ -37,8 +36,6 @@ namespace лр4__2
 
                 Console.Write("Чи є жорсткий диск SSD? (y-так, n-нi) "); ConsoleKeyInfo isSSD = Console.ReadKey(); Console.WriteLine();
 
-                // Console.Write("Чи? (y-так, n-нi): "); ConsoleKeyInfo keyHasAirport = Console.ReadKey(); Console.WriteLine();
-
                 HardDrive HardDrive_ = new HardDrive();
 
                 HardDrive_.manufacturer = manufacturer; 
@@ -48,7 +45,6 @@ namespace лр4__2
                 HardDrive_.rpm = int.Parse(rpm);
                 HardDrive_.price = double.Parse(price);
                 HardDrive_.isSSD = isSSD.Key == ConsoleKey.Y ? true : false;
-                //OurTown.HasAirport = keyHasAirport.Key == ConsoleKey.Y ? true : false;
 
                 Console.WriteLine();
                 Console.WriteLine("--------------------------------");
